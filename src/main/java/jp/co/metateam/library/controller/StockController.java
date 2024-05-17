@@ -42,9 +42,7 @@ public class StockController {
     @GetMapping("/stock/index")
     public String index(Model model) {
         List <Stock> stockList = this.stockService.findAll();
-
         model.addAttribute("stockList", stockList);
-
         return "stock/index";
     }
 

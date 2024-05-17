@@ -15,7 +15,7 @@
             <div class="inner_contens">
                 <div class="page_title">書籍編集</div>
                 <div class="page_contents">
-                    <form id="book_register_form" th:object="${bookMstDto}" th:action="@{/book/{id}/edit(id=*{id})}"
+                    <form id="book_register_form" th:object="${bookMstDto}" th:action="@{/book/{id}/edit}"
                         method="post">
                         <div class="mb30 flexarea">
                             <span class="text-red">＊は必須項目です</span>
